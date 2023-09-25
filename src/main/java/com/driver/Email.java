@@ -39,8 +39,15 @@ public class Email {
                 }
                 if (hasDigit && hasLowercase && hasUppercase && hasSpecialChar) {
                     this.password = newPassword;
+                    System.out.println("Password changed successfully!");
+                }else{
+                    System.out.println("The new password is not valid!");
                 }
+            }else{
+                System.out.println("The new password is not valid!");
             }
+        }else{
+            System.out.println("The given password does not match current password!");
         }
     }
 }
